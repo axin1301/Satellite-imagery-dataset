@@ -62,7 +62,7 @@ wget -c https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
 ```
 3. Quit current terminal window and open a new one. You should able to see (base) before your command line. 
 
-4. Use the following command to install pre-configured environment through the provided `.yml` file (you should go to the directory of this project before performing the command). Note: for the segmentation code in `GoogleStreetView_Perform_Segmentation` and `whatisthis`, please refer to the corresponding official repo [ViT-Adapter](https://github.com/czczup/ViT-Adapter) and [GeoSeg](https://github.com/WangLibo1995/GeoSeg) to check detailed installation guide.
+4. Use the following command to install pre-configured environment through the provided `.yml` file (you should go to the directory of this project before performing the command). Note: for the segmentation code in `Land_Cover_Semantic_Segmentation` and `Object_Detection`, please refer to the corresponding official repo [ViT-Adapter](https://github.com/czczup/ViT-Adapter), [GeoSeg](https://github.com/WangLibo1995/GeoSeg), and [Yolov5](https://github.com/ultralytics/yolov5) to check detailed installation guide.
 ``` bash
 conda env create -f ./anaconda_env_satellite_dataset.yml
 ```
@@ -78,7 +78,8 @@ conda activate Satellite_Dataset
 conda deactivate 
 ```
 
-Note: For the segmentation code in `Land_Cover_Semantic_Segmentation` and `Object_Detection`, please refer to the corresponding official repo [ViT-Adapter](https://github.com/czczup/ViT-Adapter), [GeoSeg](https://github.com/WangLibo1995/GeoSeg), and [Yolov5](https://github.com/ultralytics/yolov5) to check detailed installation guide.
+(Optional) Command for creating our environment without the .yml file.
+
 ``` bash
 conda create -n Satellite_Dataset python==3.8
 pip install numpy ipython pandas matplotlib seaborn datetime pathlib shapely geopandas pyrosm h5netcdf haversine requests urllib3 tqdm scipy scikit-learn
