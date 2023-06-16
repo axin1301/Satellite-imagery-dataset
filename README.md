@@ -1,4 +1,4 @@
-# A Satellite Imagery Dataset for Long-Term Sustainable Development in US Cities
+# A Satellite Imagery Dataset for Long-Term Sustainable Development in the U.S. Cities
 
 ## Introduction
 
