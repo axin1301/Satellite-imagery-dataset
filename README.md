@@ -23,8 +23,6 @@ This repo is the code for generating the dataset discribed in "A Satellite Image
 │   │   │   │   │   ├── process_imagery_DOTAv2.py (entry code to process satellite images with the model trained on DOTAv2)
 │   ├── SDG_Indicators
 │   │   ├── SDG 1 data (No poverty)
-│   │   │   ├── Nighttime_Light_Data
-│   │   │   ├── Population_Data
 │   │   │   ├── ACS data
 │   │   │   │   ├── Population_Above/Below_Poverty
 │   │   │   │   ├── Population_with_a_ratio_of_Income_to_Poverty_Level
@@ -34,6 +32,11 @@ This repo is the code for generating the dataset discribed in "A Satellite Image
 │   │   ├── SDG 4 data (Quality education)
 │   │   │   ├── ACS data
 │   │   │   │   ├── Population_with_Different_Education_Status
+│   │   ├── SDG 10 data (Reduced inequalities)
+│   │   │   ├── ACS data
+│   │   │   │   ├── Income Gini
+│   │   │   ├── Nighttime_Light_Data, Population_Data
+│   │   │   │   ├── Light Gini
 │   │   ├── SDG 11 data (Sustainable cities and communities)
 │   │   │   ├── OSM data
 │   ├── prescribing (code and results for collection prescribing data)
