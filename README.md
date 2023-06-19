@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repo is the code for generating the dataset discribed in "A Satellite Imagery Dataset for Long-Term Sustainable Development in US Cities".
+This repo is the code for generating the dataset discribed in "A Satellite Imagery Dataset for Long-Term Sustainable Development in United States Cities".
 
 ## Folder Structure
 ```none
