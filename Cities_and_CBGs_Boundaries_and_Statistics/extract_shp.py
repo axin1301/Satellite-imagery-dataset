@@ -15,7 +15,7 @@ print(len(city_list))
 
 list1 = []
 list2 = []
-shp_list = glob.glob('shpfile/*/*.shp')
+shp_list = glob.glob('../prescribing/US_SHAPEFILE_city/*/*.shp')
 for shp in shp_list:
     #print(shp.split('.shp')[0])
     #sf=shapefile.Reader(shp.split('.shp')[0])
