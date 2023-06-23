@@ -9,39 +9,37 @@ This repo is the code for generating the dataset discribed in "A Satellite Image
 ├── Dataset
 │   ├── Cities_and_CBGs_Boundaries_and_Statistics (cities/CBGs basic geographical statistics)
 │   ├── Satellite_Imagery_and_Visual_Attributes
-│   │   ├── Satellite_Imagery (directory to store satellite image and indices)
-│   │   ├── Land_Cover_Semantic_Segmentation (segmentation code for satellite images)
-│   │   │   ├── ViT-Adapter-main-mine (fork from https://github.com/czczup/ViT-Adapter and make changes)
-│   │   │   │   ├── detection (not used in our proj)
-│   │   │   │   ├── segmentation
-│   │   │   │   │   ├── process_semseg.py (entry code to process satellite image semantic segmentation)
-│   │   ├── Object_Detection (object detection code for satellite images)
-│   │   │   ├── Yolov5 (fork from https://github.com/ultralytics/yolov5 and make changes)
-│   │   │   │   ├── xView
-│   │   │   │   │   ├── process_imagery_xview.py (entry code to process satellite images with the model trained on xView)
-│   │   │   │   ├── DOTAv2
-│   │   │   │   │   ├── process_imagery_DOTAv2.py (entry code to process satellite images with the model trained on DOTAv2)
+│   │   ├── satellite_imagery_collection (directory to store satellite image and indices)
+│   │   ├── Segmentation (segmentation code for satellite images, fork from https://github.com/czczup/ViT-Adapter and make changes)
+│   │   │   ├── detection (not used in our work)
+│   │   │   ├── segmentation
+│   │   │   │   ├── process_semseg.py (entry code to process satellite image semantic segmentation)
+│   │   ├── Object_Detection (object detection code for satellite images, Yolov5 (fork from https://github.com/ultralytics/yolov5 and make changes))
+│   │   │   ├── process_imagery_xview.py (entry code to process satellite images with the model trained on xView)
+│   │   │   ├── process_imagery_DOTAv2.py (entry code to process satellite images with the model trained on DOTAv2)
+│   │   ├── Counting_final_visual_attributes (calculating final visual attributes for each city and CBG)
 │   ├── SDG_Indicators
-│   │   ├── SDG 1 data (No poverty)
+│   │   ├── SDG 1 (No poverty)
 │   │   │   ├── ACS data
 │   │   │   │   ├── Population_Above/Below_Poverty
 │   │   │   │   ├── Population_with_a_ratio_of_Income_to_Poverty_Level
-│   │   ├── SDG 3 data (Good health and well-being)
+│   │   ├── SDG 3 (Good health and well-being)
 │   │   │   ├── ACS data
 │   │   │   │   ├── Population_with_no_Health_Insurance_for_Different_Age_Groups
-│   │   ├── SDG 4 data (Quality education)
+│   │   ├── SDG 4 (Quality education)
 │   │   │   ├── ACS data
 │   │   │   │   ├── Population_with_Different_Education_Status
-│   │   ├── SDG 10 data (Reduced inequalities)
+│   │   ├── SDG 10 (Reduced inequalities)
 │   │   │   ├── ACS data
 │   │   │   │   ├── Income Gini
 │   │   │   ├── Nighttime_Light_Data, Population_Data
 │   │   │   │   ├── Light Gini
-│   │   ├── SDG 11 data (Sustainable cities and communities)
+│   │   ├── SDG 11 (Sustainable cities and communities)
 │   │   │   ├── OSM data
 │   ├── prescribing (code and results for collection prescribing data)
-│   │   ├── get_data.py (download prescribing data)
-│   │   ├── original_data (directory for save the prescribing data files)
+│   │   ├── OSM_PBF ()
+│   │   ├── US_CBG_Geojson
+│   │   ├── US_SHAPEFILE_city
 │   ├── output (directory to store the final output dataset)
 ```
 
