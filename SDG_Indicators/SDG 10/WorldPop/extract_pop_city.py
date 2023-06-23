@@ -11,8 +11,8 @@ import pandas as pd
 shpfile_list=glob.glob('shape_scd_city/*.shp')
 
 for year in [2014,2015,2016,2017,2018,2019,2020]:
-    #input_raster = 'NTL/VNL_v21_npp_'+str(year)+'_global_vcmslcfg_c202205302300.median_masked.dat.tif'
-    input_raster = 'popu_worldpop/pop_USA_mainland_'+str(year)+'.tif'
+    #input_raster = '../../../prescribing/NTL/VNL_v21_npp_'+str(year)+'_global_vcmslcfg_c202205302300.median_masked.dat.tif'
+    input_raster = '../../../prescribing/popu_worldpop/pop_USA_mainland_'+str(year)+'.tif'
     input_raster=gdal.Open(input_raster)
 
     #folderPolyAimMap = 'cropped_NTL/'+str(year)+'/'
