@@ -6,10 +6,6 @@ import matplotlib.pyplot as plt
 import geopandas as gpd
 import glob
 
-#OUTPUT_PATH = Path('./output/environmental_determinants/built_environment/road_density')
-#OUTPUT_PATH.mkdir(exist_ok=True, parents=True)
-
-#input_files = sorted([i for i in Path('./temp_output/osm_filter/pois/city_level').glob('*.geojson')])
 
 typ = 'driving'
 #input_files = glob.glob('../out_geojson_'+typ+'/*.geojson')
