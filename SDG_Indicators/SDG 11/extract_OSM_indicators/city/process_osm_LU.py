@@ -41,7 +41,7 @@ def subtask(order,Npara,Nlp,shp_list,city_state_lut,state_osm_lut,multi_shp_year
         print(state_osm_name)
 
         #osm = OSM('us_osm_pbf/'+state_osm_name+'-' +str(year) + '0101.osm.pbf', bounding_box=shapefile.iloc[0,:]['geometry'])
-        osm = OSM('us_osm_pbf2021/'+state_osm_name+'-' +str(year) + '0101.osm.pbf', bounding_box=shapefile.iloc[0,:]['geometry'])
+        osm = OSM('../../prescribing/OSM_PBF/'+state_osm_name+'-' +str(year) + '0101.osm.pbf', bounding_box=shapefile.iloc[0,:]['geometry'])
         #drive_net = osm.get_network(network_type="walking")
         #drive_net = osm.get_network(network_type="driving")
         #drive_net = osm.get_network(network_type=typ)
@@ -61,9 +61,9 @@ def subtask(order,Npara,Nlp,shp_list,city_state_lut,state_osm_lut,multi_shp_year
 if __name__ == '__main__':
     
     typ = 'LU'
-    shp_list = glob.glob('shape_scd_2/*.shp') + glob.glob('shape_scd/*.shp')
-    city_state_lut = pd.read_csv('shape_summary_merge.csv')
-    state_osm_lut = pd.read_csv('state4osm.csv')
+    shp_list = glob.glob('../../Cities_and_CBGs_Boundaries_and_Statistics/shape_scd_city/*.shp')
+    city_state_lut = pd.read_csv('../../Cities_and_CBGs_Boundaries_and_Statistics/shape_summary_merge.csv')
+    state_osm_lut = pd.read_csv('../../Cities_and_CBGs_Boundaries_and_Statistics/state4osm.csv')
 
     multi_shp_year = []
     for shp_name in shp_list: 
