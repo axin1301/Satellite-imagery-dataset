@@ -49,8 +49,8 @@ for shp in shp_list:
 #pd_dict.to_csv('100_large_city_state.csv', index=False)
             #w = shapefile.Writer('city_shape_supp/'+shaperec.record['NAMELSAD'])
             #w = shapefile.Writer('shape_scd/'+shaperec.record['NAMELSAD'])
-            #w = shapefile.Writer('shape_scd/'+cname)
-            w = shapefile.Writer('tilefile_zl19_scd/'+cname)
+            w = shapefile.Writer('shape_scd_city/'+cname)
+            #w = shapefile.Writer('tilefile_zl19_scd/'+cname)
             w.fields = sf.fields
             w.record(*shaperec.record)
             w.shape(shaperec.shape)
@@ -58,8 +58,8 @@ for shp in shp_list:
             #prj_file = shp.split('.')[0]+'.prj'
             prj_ori = shp.replace('.shp','.prj')
             #print(prj_ori)
-            #prj_file = 'shape_scd/'+cname+'.prj'
-            prj_file = 'tilefile_zl19_scd/'+cname+'.prj'
+            prj_file = 'shape_scd_city/'+cname+'.prj'
+            #prj_file = 'tilefile_zl19_scd/'+cname+'.prj'
             #print(prj_file)
 
             if os.path.exists(prj_ori):
