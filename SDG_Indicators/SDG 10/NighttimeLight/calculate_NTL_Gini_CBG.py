@@ -14,8 +14,8 @@ def gini_coef(wealths):
     A = 0.5 - B
     return A / (A+B)
 
-cbg_in_city_list = glob.glob('../ACS/cbg_in_city_new_2/*.geojson')
-#cbg_in_city_list = glob.glob('../ACS/cbg_in_city_new_2_2020/*.geojson')
+cbg_in_city_list = glob.glob('../../../prescribing/cbg_in_city_new/*.geojson')
+#cbg_in_city_list = glob.glob('../../../prescribing/cbg_in_city_new_2020/*.geojson')
 city_name_list = [x.split('/')[-1].split('.')[0] for x in cbg_in_city_list]
 
 for year in range(2014,2020):
