@@ -128,7 +128,7 @@ if __name__ == '__main__':
     #global token
     #token = 'AAPK868a38acc94c49c6b5fe93ec72d782848w26DEckXxsIoRYE1oI_rnk57Q3YYwSCh9xYvKNT5cmcS2N5v5RHyL-TZrX1jVDA'
     
-    csv_file_list = glob.glob('../../../../../Cities_and_CBGs_Boundaries_and_Statistics/tilefile_scd/*.csv')#[:20]
+    csv_file_list = glob.glob('tilefile_scd/*.csv')#[:20]
     print(len(csv_file_list))
     
     # city_tmp_list = ['Henderson city','Houston city','Indianapolis city (balance)','Los Angeles city']
