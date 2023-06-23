@@ -56,15 +56,15 @@ def doesTileIntersects(z, y, x, polygon):
         tile = getTileASpolygon(x, y, z)
         return polygon.intersects(tile)
 
-city_list = list(pd.read_csv('image_download/final_download_info_state_fips.csv')['city2'])[:100]
-fips_list = list(pd.read_csv('image_download/final_download_info_state_fips.csv')['state_code'])[:100]
+#city_list = list(pd.read_csv('image_download/final_download_info_state_fips.csv')['city2'])[:100]
+#fips_list = list(pd.read_csv('image_download/final_download_info_state_fips.csv')['state_code'])[:100]
 #city_list = [x+' city' for x in c_list]
 
 #city_list = ['Anchorage municipality', 'Gilbert town','Indianapolis city (balance)','Boise City city','Nashville-Davidson metropolitan government (balance)','Omaha','Lexington-Fayette urban county']
 #fips_list = [2,4,18,16,47,31,21]
 
 
-shp_list = glob.glob('shpfile/*/*.shp')
+shp_list = glob.glob('../../../../../Cities_and_CBGs_Boundaries_and_Statistics/shape_scd_city/*/*.shp')
 #shp_list = ['shpfile/tl_2021_31_place/tl_2021_31_place.shp']
 print(len(shp_list))
 
@@ -77,12 +77,12 @@ for shp in shp_list:
     for c in range(l):
         shaperec = sf.record(c)
         #print(shaperec['NAMELSAD'])
-        if shaperec['NAMELSAD'] in city_list:
+        if 1:#shaperec['NAMELSAD'] in city_list:
 
-            city_iidx = int(city_list.index(shaperec['NAMELSAD']))
-            state_no = int(fips_list[city_iidx])
-            if int(shaperec['STATEFP']) != state_no:
-                continue
+            #city_iidx = int(city_list.index(shaperec['NAMELSAD']))
+            #state_no = int(fips_list[city_iidx])
+            #if int(shaperec['STATEFP']) != state_no:
+            #    continue
 
             stArea = Polygon(sf.shapes()[c].points)
             print(shaperec['NAMELSAD'])
@@ -108,5 +108,5 @@ for shp in shp_list:
             x_list = [x[2] for x in tileList]
 
             pd_dict = pd.DataFrame({'y_tile':y_list, 'x_list':x_list})
-            pd_dict.to_csv('./tilefile_zl19_scd/'+shaperec['NAMELSAD']+'.csv', index = False)
+            pd_dict.to_csv('./tilefile_scd/'+shaperec['NAMELSAD']+'.csv', index = False)
             #print('one city done')
