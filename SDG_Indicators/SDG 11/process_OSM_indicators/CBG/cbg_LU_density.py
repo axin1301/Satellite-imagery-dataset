@@ -9,6 +9,7 @@ import geopandas as gpd
 
 #typ = 'driving'
 #area_lut = pd.read_csv('Area_Lut_cbg.csv')
+#area_lut = pd.read_csv('Area_Lut_cbg19.csv')
 area_lut = pd.read_csv('Area_Lut_cbg20.csv')
 all_city_list = list(pd.read_csv('../../process_post_osm/Area_Lut_city.csv')['NAME_process'])
 #landuse_labels = ['grass', 'commercial', 'recreation_ground', 'churchyard', 'industrial', 'pond', 'reservoir', 'construction', 'basin', 'residential', 'railway', 'farmland', 'cemetery', 'quarry', 'retail', 'forest']
@@ -25,14 +26,19 @@ for typ in ['LU']:
     city_name_list_all = []
     segmentation_df = pd.DataFrame()
     #for year in range(14,21):
+    #for year in range(14,20):
     for year in range(20,21):
         for c in all_city_list:
-            if c == 'Anchorage municipality' or c == 'Urban Honolulu CDP' or c == 'Santa Clarita city' or c == 'San Bernardino city':
+            #if c == 'Anchorage municipality' or c == 'Urban Honolulu CDP' or c == 'Santa Clarita city' or c == 'San Bernardino city':
+            #    continue
+            if c not in ['Santa Clarita city','San Bernardino city']:
                 continue
             print(year, all_city_list.index(c))
-            df = pd.read_csv(typ+'/'+c+'_cbg_'+typ+'_'+str(year)+'.csv')
+            #df = pd.read_csv(typ+'/'+c+'_cbg_'+typ+'_'+str(year)+'.csv')
+            df = pd.read_csv('sjoin_2city/'+c+'_cbg_'+typ+'_'+str(year)+'.csv')
             #print(df.columns)
-            shapefile = gpd.read_file('../../out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
+            #shapefile = gpd.read_file('../../out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
+            shapefile = gpd.read_file('../../out_geojson_2city/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
             #print(shapefile1.columns)
             cbg_list = list(set(list(df['CensusBlockGroup'])))
             for cbg in cbg_list:
@@ -78,4 +84,6 @@ for typ in ['LU']:
 
     xxx = pd.DataFrame({'CityName':city_name_list_all,'CensusBlockGroup':cbg_list_all,'Year':year_list,'Area':area_list})
     df_seg_concat = xxx.merge(segmentation_df.reset_index(),on = ['CensusBlockGroup','Year'])
-    df_seg_concat.to_csv('LU_density_cbg_new_20.csv',index=False)
+    #df_seg_concat.to_csv('LU_density_cbg_new_1419.csv',index=False)
+    #df_seg_concat.to_csv('LU_density_cbg_new_1419_2city.csv',index=False)
+    df_seg_concat.to_csv('LU_density_cbg_new_20_2city.csv',index=False)
