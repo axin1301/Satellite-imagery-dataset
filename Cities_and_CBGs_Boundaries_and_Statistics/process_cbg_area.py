@@ -4,9 +4,8 @@ from pathlib import Path
 import glob
 import geopandas as gpd
 
-#shp_list = glob.glob('../../cbg_in_city_new/*.geojson')
-#shp_list = glob.glob('../../../ACS/cbg_in_city_new/*.geojson')#2014to2019
-shp_list = glob.glob('../../../ACS/cbg_in_city_new_2020/*.geojson') #2020to2023
+#shp_list = glob.glob('cbg_in_city_new/*.geojson')#2014to2019
+shp_list = glob.glob('cbg_in_city_new_2020/*.geojson') #2020to2023
 
 df_final = pd.DataFrame()
 cnt = 0
