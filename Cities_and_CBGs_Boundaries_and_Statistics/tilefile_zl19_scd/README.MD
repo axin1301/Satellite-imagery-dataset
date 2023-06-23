@@ -1,1 +1,1 @@
-Folder for saving the city bounndary shapefiles. An example of city Vermont is given.
+Folder for saving the city bounndary shapefiles. An example of city Santa Clarita is given.
