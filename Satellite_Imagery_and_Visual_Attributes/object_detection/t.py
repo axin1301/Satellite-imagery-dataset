@@ -1,0 +1,1 @@
+print('python val_new.py --weights runs/train/expXview/weights/best.pt --data ''obd_yaml_file/dataset_xview_2018_San Bernardino city.yaml'' --batch-size 256 --img 512 --save-txt --save-conf --name ''dataset_xview_2018_San Bernardino city')
