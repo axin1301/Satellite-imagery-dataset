@@ -4,7 +4,7 @@ from pathlib import Path
 import glob
 import geopandas as gpd
 
-shp_list = glob.glob('shape_scd/*.shp')
+shp_list = glob.glob('shape_scd_city/*.shp')
 #'STATEFP', 'PLACEFP', 'PLACENS', 'GEOID', 'NAME', 'NAMELSAD', 'LSAD',
 #       'CLASSFP', 'PCICBSA', 'PCINECTA', 'MTFCC', 'FUNCSTAT', 'ALAND',
 #              'AWATER', 'INTPTLAT', 'INTPTLON', 'geometry'
