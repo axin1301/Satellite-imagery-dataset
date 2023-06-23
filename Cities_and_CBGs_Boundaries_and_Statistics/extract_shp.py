@@ -3,22 +3,11 @@ import os, shapefile, shutil
 import shapely
 import glob
 
-#c_list = list(pd.read_csv('100_large_city_state_number.csv')['city'])
-#city_list = [x+' city' for x in c_list]
-#state_no = list(pd.read_csv('100_large_city_state_number.csv')['state_code'])
-#city_list = city_list + ['Indianapolis city (balance)', 'Boise City city', 'San Bernardino city', 'Omaha city']
-
 #c_list = list(pd.read_csv('cities_without_shp.csv')['city'])
 #city_list = [x+' city' for x in c_list]
 #state_no = list(pd.read_csv('cities_without_shp.csv')['state_code'])
 
-#city_list = ['Anchorage municipality', 'Gilbert town','Indianapolis city (balance)','Boise City city','Nashville-Davidson metropolitan government (balance)','Omaha','Lexington-Fayette urban county']
-#state_no = [2,4,18,16,47,31,21]
-#city_list = list(pd.read_csv('image_download/final_download_info_state_fips.csv')['city2'])[:100]
-#state_no = list(pd.read_csv('image_download/final_download_info_state_fips.csv')['state_code'])[:100]
-#city_list = ['Louisville/Jefferson County metro government (balance)']
-#state_no = [21]
-city_list = ['Santa Clarita city','San Bernardino city']
+city_list = ['Santa Clarita city','San Bernardino city'] #city name and state name
 state_no = [6,6]
 
 
@@ -61,7 +50,7 @@ for shp in shp_list:
             #w = shapefile.Writer('city_shape_supp/'+shaperec.record['NAMELSAD'])
             #w = shapefile.Writer('shape_scd/'+shaperec.record['NAMELSAD'])
             #w = shapefile.Writer('shape_scd/'+cname)
-            w = shapefile.Writer('tilefile_zl19_scd_2/'+cname)
+            w = shapefile.Writer('tilefile_zl19_scd/'+cname)
             w.fields = sf.fields
             w.record(*shaperec.record)
             w.shape(shaperec.shape)
@@ -70,7 +59,7 @@ for shp in shp_list:
             prj_ori = shp.replace('.shp','.prj')
             #print(prj_ori)
             #prj_file = 'shape_scd/'+cname+'.prj'
-            prj_file = 'tilefile_zl19_scd_2/'+cname+'.prj'
+            prj_file = 'tilefile_zl19_scd/'+cname+'.prj'
             #print(prj_file)
 
             if os.path.exists(prj_ori):
