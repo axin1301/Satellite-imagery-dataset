@@ -9,19 +9,11 @@ import pandas as pd
 import rasterio as rio
 from rasterio.mask import mask
 
-def gini_coef(wealths):
-    cum_wealths = np.cumsum(sorted(np.append(wealths, 0)))
-    sum_wealths = cum_wealths[-1]
-    xarray = np.array(range(0, len(cum_wealths))) / np.float(len(cum_wealths)-1)
-    yarray = cum_wealths / sum_wealths
-    B = np.trapz(yarray, x=xarray)
-    A = 0.5 - B
-    return A / (A+B)
 
 #extract-by-mask
-#shpfile_list=glob.glob('shape_scd/*.shp')
-#cbg_in_city_list = glob.glob('../ACS/cbg_in_city_new_2/*.geojson')
-cbg_in_city_list = glob.glob('../ACS/cbg_in_city_new_2_2020/*.geojson')
+
+#cbg_in_city_list = glob.glob('../../../Cities_and_CBGs_Boundaries_and_Statistics/cbg_in_city_new/*.geojson') #2014 to 2019
+cbg_in_city_list = glob.glob('../../../Cities_and_CBGs_Boundaries_and_Statistics/cbg_in_city_new_2020/*.geojson')$ 2020 to 2023
 
 #cbg_list = gpd.read_file(cbg_in_city_list[0])
 #print(len(cbg_list))
@@ -43,13 +35,9 @@ for j in range(len(cbg_in_city_list)):
 
     for year in ['2020']:#[2014,2015,2016,2017,2018,2019]:#,2020]:
         print(year)
-        #input_raster = 'NTL/VNL_v21_npp_'+str(year)+'_global_vcmslcfg_c202205302300.median_masked.dat.tif'
-        input_raster = 'popu_worldpop/pop_USA_mainland_'+str(year)+'.tif'
-    #input_raster=gdal.Open(input_raster)
+        #input_raster = '../../../prescribing/NTL/VNL_v21_npp_'+str(year)+'_global_vcmslcfg_c202205302300.median_masked.dat.tif'
+        input_raster = '../../../prescribing/popu_worldpop/pop_USA_mainland_'+str(year)+'.tif'
         with rio.open(input_raster) as src:
-
-    #folderPolyAimMap = 'NTL_GINI/NTL_clip/'+str(year)+'/'
-    #folderPolyAimMap = 'NTL_GINI/pop_clip_old/'+str(year)+'/'
             #folderPolyAimMap = 'cropped_NTL_cbg/'+str(year)+'/'+city_name+'/'
             folderPolyAimMap = 'cropped_popu_cbg/'+str(year)+'/'+city_name+'/'
             if not os.path.exists(folderPolyAimMap):
@@ -70,22 +58,3 @@ for j in range(len(cbg_in_city_list)):
 
                 with rio.open(output_name, 'w', **out_meta) as dst:
                     dst.write(out_image)
-
-    # tif输入路径，打开文件
-    # input_raster = r"D:/ArcGIS/pop_USA_mainland1.tif"
-
-    #for shpfile in shpfile_list:
-    #    print(shpfile)
-    #    input_shape=shpfile
-    #    r = shapefile.Reader(input_shape)
-    #    output_name_tmp=shpfile.split('/')[-1]
-    #    output_name = output_name_tmp.replace('shp','tif')
-#    for i in range(3):#len(cbg_list)):
-#        print(i)
-        #r = cbg_list.iloc[[i]]#.at[i,'geometry']
-        #output_name = cbg_list.at[i,'CensusBlockGroup']+'.tif'
-        
-        # 矢量文件路径，打开矢量文件
-#        output_raster=folderPolyAimMap+output_name
-        # 开始裁剪，一行代码，爽的飞起
-#        ds = gdal.Warp(output_raster,input_raster,format = 'GTiff', outputBounds=r,dstNodata = -1)
