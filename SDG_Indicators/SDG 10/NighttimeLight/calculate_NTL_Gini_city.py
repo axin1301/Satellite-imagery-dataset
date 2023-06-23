@@ -16,7 +16,7 @@ def gini_coef(wealths):
 
 #for year in range(2018,2019):
 for year in range(2014,2021):
-    pop_file=glob.glob('cropped_popu/'+str(year)+'/*.tif')
+    pop_file=glob.glob('../WorldPop/cropped_popu/'+str(year)+'/*.tif')
     #print(len(pop_file))
     NTL_path = 'cropped_NTL/'+str(year)+'/'
 
