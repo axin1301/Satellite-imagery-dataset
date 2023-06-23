@@ -37,9 +37,9 @@ This repo is the code for generating the dataset discribed in "A Satellite Image
 │   │   ├── SDG 11 (Sustainable cities and communities)
 │   │   │   ├── OSM data
 │   ├── prescribing (code and results for collection prescribing data)
-│   │   ├── OSM_PBF ()
-│   │   ├── US_CBG_Geojson
-│   │   ├── US_SHAPEFILE_city
+│   │   ├── OSM_PBF (OSM data from Geofabrik)
+│   │   ├── US_CBG_Geojson (CBG boundary file and ACS data at the CBG level)
+│   │   ├── US_SHAPEFILE_city (US city boundary shapefile)
 │   ├── output (directory to store the final output dataset)
 ```
 
