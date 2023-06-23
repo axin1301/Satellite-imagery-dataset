@@ -6,17 +6,23 @@ import matplotlib.pyplot as plt
 import geopandas as gpd
 import glob
 
+#OUTPUT_PATH = Path('./output/environmental_determinants/built_environment/road_density')
+#OUTPUT_PATH.mkdir(exist_ok=True, parents=True)
+
+#input_files = sorted([i for i in Path('./temp_output/osm_filter/pois/city_level').glob('*.geojson')])
+year = 2021
 
 typ = 'driving'
 #input_files = glob.glob('../out_geojson_'+typ+'/*.geojson')
-input_files = glob.glob('../out_geojson_2city/*'+typ+'*.geojson')
-#area_lut = pd.read_csv('./Area_Lut_city.csv')
-area_lut = pd.read_csv('./Area_Lut_city_2city.csv')
+input_files = glob.glob('../out_geojson'+str(year)+'/out_geojson_'+typ+'/*.geojson')
+area_lut = pd.read_csv('../Area_Lut_city.csv')
+#area_lut = pd.read_csv('./Area_Lut_city_2city.csv')
 # STATEFP,PLACEFP,GEOID,NAME_SHP,NAME_process,ALAND,AWATER,AREA_CAL
 
 # Driving Net
 #input_files = sorted([i for i in Path('./temp_output/osm_filter/road_network/city_level').glob('*driving.geojson')])
 
+"""
 area_list = []
 road_length_list = []
 road_density_list = []
@@ -24,7 +30,12 @@ year_list = []
 city_name_list = []
 
 for f in input_files:
-    df = gpd.read_file(f, driver='GeoJSON')
+#    if f == '../out_geojson'+str(year)+'/out_geojson_'+typ+'/San Francisco city.geojson':
+#        continue
+    try:
+        df = gpd.read_file(f, driver='GeoJSON')
+    except:
+        continue
     road_length = df['length'].dropna().sum()/1000
     city_name = f.split('/')[-1].split('.')[0].split('_')[0]
     print(city_name)
@@ -39,12 +50,16 @@ for f in input_files:
 
 df = pd.DataFrame({'CityName':city_name_list, 'Year':year_list,'RoadLength':road_length_list, 'Area':area_list, 'RoadDensity':road_density_list})
 #df.to_csv(typ+'_road_density_city.csv',index=False)
-df.to_csv(typ+'_road_density_city_2city.csv',index=False)
+df.to_csv(typ+'_road_density_city'+str(year)+'.csv',index=False)
     #df.to_csv(OUTPUT_PATH.joinpath('driving_road_density_city.csv'),index=False)
+"""
 
+
+"""
 typ = 'walking'
 #input_files = glob.glob('../out_geojson_'+typ+'/*.geojson')
-input_files = glob.glob('../out_geojson_2city/*'+typ+'*.geojson')
+#input_files = glob.glob('../out_geojson_2city/*'+typ+'*.geojson')
+input_files = glob.glob('../out_geojson'+str(year)+'/out_geojson_'+typ+'/*.geojson')
 area_list = []
 road_length_list = []
 road_density_list = []
@@ -67,12 +82,13 @@ for f in input_files:
 
 df = pd.DataFrame({'CityName':city_name_list, 'Year':year_list,'RoadLength':road_length_list, 'Area':area_list, 'RoadDensity':road_density_list})
 #df.to_csv(typ+'_road_density_city.csv',index=False)
-df.to_csv(typ+'_road_density_city_2city.csv',index=False)
-
+df.to_csv(typ+'_road_density_city'+str(year)+'.csv',index=False)
+"""
 
 typ = 'cycling'
 #input_files = glob.glob('../out_geojson_'+typ+'/*.geojson')
-input_files = glob.glob('../out_geojson_2city/*'+typ+'*.geojson')
+input_files = glob.glob('../out_geojson'+str(year)+'/out_geojson_'+typ+'/*.geojson')
+#input_files = glob.glob('../out_geojson_2city/*'+typ+'*.geojson')
 area_list = []
 road_length_list = []
 road_density_list = []
@@ -80,6 +96,13 @@ year_list = []
 city_name_list = []
 
 for f in input_files:
+    #if f == '../out_geojson'+str(year)+'/out_geojson_'+typ+'/San Francisco city.geojson':
+    #    continue
+    try:
+        df = gpd.read_file(f, driver='GeoJSON')
+    except:
+        continue
+
     df = gpd.read_file(f, driver='GeoJSON')
     road_length = df['length'].dropna().sum()/1000
     city_name = f.split('/')[-1].split('.')[0].split('_')[0]
@@ -95,4 +118,4 @@ for f in input_files:
 
 df = pd.DataFrame({'CityName':city_name_list, 'Year':year_list,'RoadLength':road_length_list, 'Area':area_list, 'RoadDensity':road_density_list})
 #df.to_csv(typ+'_road_density_city.csv',index=False)
-df.to_csv(typ+'_road_density_city_2city.csv',index=False)
+df.to_csv(typ+'_road_density_city'+str(year)+'.csv',index=False)
