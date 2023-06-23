@@ -14,15 +14,12 @@ year = 2021
 
 typ = 'driving'
 #input_files = glob.glob('../out_geojson_'+typ+'/*.geojson')
-input_files = glob.glob('../out_geojson'+str(year)+'/out_geojson_'+typ+'/*.geojson')
-area_lut = pd.read_csv('../Area_Lut_city.csv')
-#area_lut = pd.read_csv('./Area_Lut_city_2city.csv')
+input_files = glob.glob('../../../extract_OSM_indicators/out_geojson2023/out_geojson'+str(year)+'/out_geojson_'+typ+'/*.geojson')
+area_lut = pd.read_csv('../../../../../Cities_and_CBGs_Boundaries_and_Statistics/Area_Lut_city.csv')
+
 # STATEFP,PLACEFP,GEOID,NAME_SHP,NAME_process,ALAND,AWATER,AREA_CAL
 
-# Driving Net
-#input_files = sorted([i for i in Path('./temp_output/osm_filter/road_network/city_level').glob('*driving.geojson')])
 
-"""
 area_list = []
 road_length_list = []
 road_density_list = []
@@ -52,14 +49,14 @@ df = pd.DataFrame({'CityName':city_name_list, 'Year':year_list,'RoadLength':road
 #df.to_csv(typ+'_road_density_city.csv',index=False)
 df.to_csv(typ+'_road_density_city'+str(year)+'.csv',index=False)
     #df.to_csv(OUTPUT_PATH.joinpath('driving_road_density_city.csv'),index=False)
-"""
 
 
-"""
+
+
 typ = 'walking'
 #input_files = glob.glob('../out_geojson_'+typ+'/*.geojson')
 #input_files = glob.glob('../out_geojson_2city/*'+typ+'*.geojson')
-input_files = glob.glob('../out_geojson'+str(year)+'/out_geojson_'+typ+'/*.geojson')
+input_files = glob.glob('../../../extract_OSM_indicators/out_geojson'+str(year)+'/out_geojson_'+typ+'/*.geojson')
 area_list = []
 road_length_list = []
 road_density_list = []
@@ -83,11 +80,11 @@ for f in input_files:
 df = pd.DataFrame({'CityName':city_name_list, 'Year':year_list,'RoadLength':road_length_list, 'Area':area_list, 'RoadDensity':road_density_list})
 #df.to_csv(typ+'_road_density_city.csv',index=False)
 df.to_csv(typ+'_road_density_city'+str(year)+'.csv',index=False)
-"""
+
 
 typ = 'cycling'
 #input_files = glob.glob('../out_geojson_'+typ+'/*.geojson')
-input_files = glob.glob('../out_geojson'+str(year)+'/out_geojson_'+typ+'/*.geojson')
+input_files = glob.glob('../../../extract_OSM_indicators/out_geojson'+str(year)+'/out_geojson_'+typ+'/*.geojson')
 #input_files = glob.glob('../out_geojson_2city/*'+typ+'*.geojson')
 area_list = []
 road_length_list = []
