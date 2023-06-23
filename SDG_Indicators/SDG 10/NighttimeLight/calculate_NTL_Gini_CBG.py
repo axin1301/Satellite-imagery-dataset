@@ -29,7 +29,7 @@ for year in range(2014,2020):
     #for city in ['Denver city_cbgs']:#city_name_list:
     for city in city_name_list:
         print(city)
-        pop_file=glob.glob('cropped_popu_cbg/'+str(year)+'/'+city+'/*.tif')
+        pop_file=glob.glob('../WorldPop/cropped_popu_cbg/'+str(year)+'/'+city+'/*.tif')
         #print(len(pop_file))
         NTL_path = 'cropped_NTL_cbg/'+str(year)+'/'+city+'/'
 
