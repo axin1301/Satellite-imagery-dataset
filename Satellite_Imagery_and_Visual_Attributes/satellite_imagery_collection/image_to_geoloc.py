@@ -29,8 +29,6 @@ for f in f_list:
     f_img_list = pd.read_csv(f)
     print(f_img_list.columns)
     city_name = f.split('/')[-1].split('.')[0]
-    #if not city_name in ['St Louis city','St Paul city','St Petersburg city']:
-    #    continue
     print(city_name)
     if os.path.exists('tilefile_zl19_scd_geoloc/' + city_name + '.csv'):
         continue
@@ -59,8 +57,6 @@ for f in f_list:
     f_img_list = pd.read_csv(f)
     print(f_img_list.columns)
     city_name = f.split('/')[-1].split('.')[0]
-    #if not city_name in ['St Louis city','St Paul city','St Petersburg city']:
-    #    continue
     print(city_name)
     f_img_list['img_name'] = 's'
     #for i in range(len(f_img_list)):
