@@ -1,8 +1,8 @@
 # This folder presents the codes for aggregating the visual attributes extracted from satellite images with the object detection and semantic segmentation models.
 
-The image names and corresponding CBG where they belong is calculated by by image_geoloc.py
+The image names and corresponding CBG where they belong are calculated by image_geoloc.py
 
-The image tile numbers (names) for each CBG are stored in the folder "imgs_within_cbg" for the year 2014~2019 and "imgs_within_cbg_2020" for the year 2020~2023.
+The image tile numbers (names) for each CBG are stored in the folder "imgs_within_cbg" for the year 2014 to 2019 and "imgs_within_cbg_2020" for the year 2020 to 2023.
 
 ## For visual attributes from DOTA dataset:
 
