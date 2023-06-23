@@ -8,9 +8,9 @@ import glob
 import geopandas as gpd
 
 #typ = 'driving'
-#area_lut = pd.read_csv('Area_Lut_cbg19.csv')
-area_lut = pd.read_csv('../Area_Lut_cbg20.csv')
-all_city_list = list(pd.read_csv('../Area_Lut_city.csv')['NAME_process'])
+#area_lut = pd.read_csv('../../../../../Cities_and_CBGs_Boundaries_and_Statistics/Area_Lut_cbg19.csv') #2014-2019
+area_lut = pd.read_csv('../../../../../Cities_and_CBGs_Boundaries_and_Statistics/Area_Lut_cbg20.csv') # 2020-2023
+all_city_list = list(pd.read_csv('../../../../../Cities_and_CBGs_Boundaries_and_Statistics/Area_Lut_city.csv')['NAME_process'])
 for typ in ['cycling']:
     area_list = []
     road_length_list = []
@@ -22,16 +22,11 @@ for typ in ['cycling']:
     #for year in range(14,20):
     for year in range(21,22):
         for c in all_city_list:
-            #if c == 'Anchorage municipality' or c == 'Urban Honolulu CDP' or c == 'Santa Clarita city' or c == 'San Bernardino city':
-            #    continue
-            #if c not in ['Santa Clarita city','San Bernardino city']:
-            #    continue
-            print(year, all_city_list.index(c))
-            df = pd.read_csv('../out_geojson_cbg'+str(20)+str(year)+'/'+typ+str(20)+str(year)+'/'+c+'_cbg_'+typ+'_'+str(year)+'.csv', low_memory=False)
-            #df = pd.read_csv('sjoin_2city/'+c+'_cbg_'+typ+'_'+str(year)+'.csv', low_memory=False)
+            city_list.index(c))
+            df = pd.read_csv('../../../extract_OSM_indicators/CBG/out_geojson_cbg'+str(20)+str(year)+'/'+typ+str(20)+str(year)+'/'+c+'_cbg_'+typ+'_'+str(year)+'.csv', low_memory=False)
+          
             #print(df.columns)
-            #shapefile = gpd.read_file('../../out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
-            shapefile = gpd.read_file('../out_geojson'+str(20)+str(year)+'/out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
+            shapefile = gpd.read_file('../../../extract_OSM_indicators/CBG/out_geojson'+str(20)+str(year)+'/out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
             #print(shapefile1.columns)
             cbg_list = list(set(list(df['CensusBlockGroup'])))
             for cbg in cbg_list:
