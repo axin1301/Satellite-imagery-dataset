@@ -35,6 +35,7 @@ This repo is the code for generating the dataset discribed in "A Satellite Image
 │   │   ├── SDG 11 (Sustainable cities and communities)
 │   │   │   ├── extract_OSM_indicators
 │   │   │   ├── process_OSM_indicators
+│   │   │   ├── Residential_Segregation
 │   ├── prescribing (collection of prescribing data)
 │   │   ├── OSM_PBF (OSM data from Geofabrik)
 │   │   ├── US_CBG_Geojson (CBG boundary file and ACS data at the CBG level)
@@ -86,3 +87,13 @@ conda deactivate
 conda create -n Satellite_Dataset python==3.8
 pip install numpy ipython pandas matplotlib seaborn datetime pathlib shapely geopandas pyrosm h5netcdf haversine requests urllib3 tqdm scipy scikit-learn
 ```
+
+## Running the code
+
+1. Run the codes in Cities_and_CBGs_Boundaries_and_Statistics to generate the necessary boundary files for city/CBG as well as the CBG-city lookup table.
+
+2. Collect the prescribing data manually to prepare the original dataset for processing.
+
+3. Collect and process the satellite imagery dataset in Satellite_Imagery_and_Visual_Attributes.
+
+4. Collect and process the ACS/NTL/WorldPop/ACS datasets in SDG_Indicators. 
