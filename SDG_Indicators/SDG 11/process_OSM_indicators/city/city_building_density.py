@@ -5,17 +5,13 @@ import matplotlib.pyplot as plt
 import geopandas as gpd
 import glob
 
-#OUTPUT_PATH = Path('./output/environmental_determinants/built_environment/building_density')
-#OUTPUT_PATH.mkdir(exist_ok=True, parents=True)
-
-area_lut = pd.read_csv('../Area_Lut_city.csv')
-#area_lut = pd.read_csv('./Area_Lut_city_2city.csv')
+area_lut = pd.read_csv('../../../../../Cities_and_CBGs_Boundaries_and_Statistics/Area_Lut_city.csv')
 
 # STATEFP,PLACEFP,GEOID,NAME_SHP,NAME_process,ALAND,AWATER,AREA_CAL
 
-#input_files = sorted([i for i in Path('./temp_output/osm_filter/building/city_level').glob('*.geojson')])
-input_files = glob.glob('../out_geojson2021/out_geojson_buildings/*.geojson')
-#input_files = glob.glob('../out_geojson_2city/*_buildings_*.geojson')
+
+input_files = glob.glob('../../../extract_OSM_indicators/out_geojson2021/out_geojson_buildings/*.geojson')
+
 
 area_list = []
 building_num_list = []
@@ -24,18 +20,12 @@ building_density_list = []
 city_name_list = []
 year_list = []
 
-#df_old = pd.read_csv('building_density_city_old.csv')
-
 for f in input_files:
     #print(f)
-    #df = gpd.read_file(f, driver='GeoJSON')
-    #building_num = df.shape[0]
+
     city_name = f.split('/')[-1].split('.')[0].split('_')[0]
     year = f.split('/')[-1].split('.')[0].split('_')[-1]
 
-    #df_sel = df_old[(df_old['CityName']==city_name) & (df_old['Year']==int(str(20)+str(year)))]
-    #if len(df_sel)>0:
-    #    continue
     print(f)
     df = gpd.read_file(f, driver='GeoJSON')
     building_num = df.shape[0]
@@ -51,4 +41,3 @@ df = pd.DataFrame({'CityName':city_name_list, 'Year':year_list, 'BuildingNum':bu
 df = df.sort_values(by=['CityName','Year'],ascending=True)
 df.to_csv('building_density_city2021.csv',index=False)
 print(len(df))
-#df.to_csv('building_density_city_2city.csv',index=False)
