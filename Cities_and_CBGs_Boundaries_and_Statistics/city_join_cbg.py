@@ -18,7 +18,7 @@ print(cbg.crs)
 #'StateFIPS', 'CountyFIPS', 'TractCode', 'BlockGroup','CensusBlockGroup', 'State', 'County', 'ClassCode', 'geometry','index_right', 'STATEFP', 'PLACEFP', 'PLACENS', 'GEOID', 'NAME','NAMELSAD', 'LSAD', 'CLASSFP', 'PCICBSA', 'PCINECTA', 'MTFCC','FUNCSTAT', 'ALAND', 'AWATER', 'INTPTLAT', 'INTPTLON'
 
 
-shp_list = glob.glob('tilefile_zl19_scd/*.shp')
+shp_list = glob.glob('shape_scd_city/*.shp')
 for shp in shp_list:
     city_name = shp.split('/')[-1].split('.')[0]
     print(city_name)
