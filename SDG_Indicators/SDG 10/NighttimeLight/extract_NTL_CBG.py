@@ -63,7 +63,7 @@ for j in range(len(cbg_in_city_list)):
                 with rio.open(output_name, 'w', **out_meta) as dst:
                     dst.write(out_image)
 
-    # tif输入路径，打开文件
+    # tif
     # input_raster = r"D:/ArcGIS/pop_USA_mainland1.tif"
 
     #for shpfile in shpfile_list:
@@ -77,7 +77,7 @@ for j in range(len(cbg_in_city_list)):
         #r = cbg_list.iloc[[i]]#.at[i,'geometry']
         #output_name = cbg_list.at[i,'CensusBlockGroup']+'.tif'
         
-        # 矢量文件路径，打开矢量文件
+        # 
 #        output_raster=folderPolyAimMap+output_name
-        # 开始裁剪，一行代码，爽的飞起
+        # 
 #        ds = gdal.Warp(output_raster,input_raster,format = 'GTiff', outputBounds=r,dstNodata = -1)
