@@ -8,10 +8,10 @@ import glob
 import geopandas as gpd
 
 #typ = 'driving'
-area_lut = pd.read_csv('Area_Lut_cbg20.csv')
-all_city_list = list(pd.read_csv('../../process_post_osm/Area_Lut_city.csv')['NAME_process'])
+area_lut = pd.read_csv('../../../../../Cities_and_CBGs_Boundaries_and_Statistics/Area_Lut_cbg20.csv')
+all_city_list = list(pd.read_csv('../../../../../Cities_and_CBGs_Boundaries_and_Statistics/Area_Lut_city.csv')['NAME_process'])
 
-for typ in ['buildings']: #'pois']:
+for typ in ['buildings']:
     area_list = []
     building_num_list = []
     building_density_list = []
@@ -22,12 +22,10 @@ for typ in ['buildings']: #'pois']:
     #for year in range(14,21):
     for year in range(20,21):
         for c in all_city_list:
-            if c == 'Anchorage municipality' or c == 'Urban Honolulu CDP'  or c == 'Santa Clarita city' or c == 'San Bernardino city':
-                continue
             print(year, all_city_list.index(c))
             df = pd.read_csv(typ+'/'+c+'_cbg_'+typ+'_'+str(year)+'.csv', low_memory=False)
             #print(df.columns)
-            shapefile = gpd.read_file('../../out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
+            shapefile = gpd.read_file('../../../extract_OSM_indicators/CBG/out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
             #print(shapefile1.columns)
             cbg_list = list(set(list(df['CensusBlockGroup'])))
             for cbg in cbg_list:
@@ -62,12 +60,10 @@ for typ in ['pois']:
     #for year in range(14,21):
     for year in range(20,21):
         for c in all_city_list:
-            if c == 'Anchorage municipality' or c == 'Urban Honolulu CDP'  or c == 'Santa Clarita city' or c == 'San Bernardino city':
-                continue
             print(year, all_city_list.index(c))
             df = pd.read_csv(typ+'/'+c+'_cbg_'+typ+'_'+str(year)+'.csv')
             #print(df.columns)
-            shapefile = gpd.read_file('../../out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
+            shapefile = gpd.read_file('../../../extract_OSM_indicators/CBG/out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
             #print(shapefile1.columns)
             cbg_list = list(set(list(df['CensusBlockGroup'])))
             for cbg in cbg_list:
