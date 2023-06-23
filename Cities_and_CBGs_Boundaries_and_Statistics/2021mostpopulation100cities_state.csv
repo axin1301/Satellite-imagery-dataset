@@ -1,0 +1,101 @@
+GEO_ID,NAME,Population,state,city_name,city_name_concat
+1600000US3651000,"New York city, New York",8467513, New York,New York city,New_York_city
+1600000US0644000,"Los Angeles city, California",3849306, California,Los Angeles city,Los_Angeles_city
+1600000US1714000,"Chicago city, Illinois",2696561, Illinois,Chicago city,Chicago_city
+1600000US4835000,"Houston city, Texas",2287047, Texas,Houston city,Houston_city
+1600000US0455000,"Phoenix city, Arizona",1624539, Arizona,Phoenix city,Phoenix_city
+1600000US4260000,"Philadelphia city, Pennsylvania",1576251, Pennsylvania,Philadelphia city,Philadelphia_city
+1600000US4865000,"San Antonio city, Texas",1451863, Texas,San Antonio city,San_Antonio_city
+1600000US0666000,"San Diego city, California",1381600, California,San Diego city,San_Diego_city
+1600000US4819000,"Dallas city, Texas",1288441, Texas,Dallas city,Dallas_city
+1600000US0668000,"San Jose city, California",983530, California,San Jose city,San_Jose_city
+1600000US4805000,"Austin city, Texas",964000, Texas,Austin city,Austin_city
+1600000US1235000,"Jacksonville city, Florida",954624, Florida,Jacksonville city,Jacksonville_city
+1600000US4827000,"Fort Worth city, Texas",940437, Texas,Fort Worth city,Fort_Worth_city
+1600000US3918000,"Columbus city, Ohio",907310, Ohio,Columbus city,Columbus_city
+1600000US1836003,"Indianapolis city (balance), Indiana",882327, Indiana,Indianapolis city (balance),Indianapolis_city_(balance)
+1600000US3712000,"Charlotte city, North Carolina",879697, North Carolina,Charlotte city,Charlotte_city
+1600000US0667000,"San Francisco city, California",815201, California,San Francisco city,San_Francisco_city
+1600000US5363000,"Seattle city, Washington",733904, Washington,Seattle city,Seattle_city
+1600000US0820000,"Denver city, Colorado",711463, Colorado,Denver city,Denver_city
+1600000US4055000,"Oklahoma City city, Oklahoma",687691, Oklahoma,Oklahoma City city,Oklahoma_City_city
+1600000US4752006,"Nashville-Davidson metropolitan government (balance), Tennessee",678845, Tennessee,Nashville-Davidson metropolitan government (balance),Nashville-Davidson_metropolitan_government_(balance)
+1600000US4824000,"El Paso city, Texas",678422, Texas,El Paso city,El_Paso_city
+1600000US1150000,"Washington city, District of Columbia",670050, District of Columbia,Washington city,Washington_city
+1600000US2507000,"Boston city, Massachusetts",654281, Massachusetts,Boston city,Boston_city
+1600000US3240000,"Las Vegas city, Nevada",646776, Nevada,Las Vegas city,Las_Vegas_city
+1600000US4159000,"Portland city, Oregon",642218, Oregon,Portland city,Portland_city
+1600000US2622000,"Detroit city, Michigan",632589, Michigan,Detroit city,Detroit_city
+1600000US2148006,"Louisville/Jefferson County metro government (balance), Kentucky",628577, Kentucky,Louisville/Jefferson County metro government (balance),Louisville/Jefferson_County_metro_government_(balance)
+1600000US4748000,"Memphis city, Tennessee",628118, Tennessee,Memphis city,Memphis_city
+1600000US2404000,"Baltimore city, Maryland",576498, Maryland,Baltimore city,Baltimore_city
+1600000US5553000,"Milwaukee city, Wisconsin",569326, Wisconsin,Milwaukee city,Milwaukee_city
+1600000US3502000,"Albuquerque city, New Mexico",562591, New Mexico,Albuquerque city,Albuquerque_city
+1600000US0627000,"Fresno city, California",544500, California,Fresno city,Fresno_city
+1600000US0477000,"Tucson city, Arizona",543215, Arizona,Tucson city,Tucson_city
+1600000US0664000,"Sacramento city, California",525028, California,Sacramento city,Sacramento_city
+1600000US0446000,"Mesa city, Arizona",509492, Arizona,Mesa city,Mesa_city
+1600000US2938000,"Kansas City city, Missouri",508415, Missouri,Kansas City city,Kansas_City_city
+1600000US1304000,"Atlanta city, Georgia",496480, Georgia,Atlanta city,Atlanta_city
+1600000US3137000,"Omaha city, Nebraska",487299, Nebraska,Omaha city,Omaha_city
+1600000US0816000,"Colorado Springs city, Colorado",483969, Colorado,Colorado Springs city,Colorado_Springs_city
+1600000US3755000,"Raleigh city, North Carolina",469502, North Carolina,Raleigh city,Raleigh_city
+1600000US5182000,"Virginia Beach city, Virginia",457672, Virginia,Virginia Beach city,Virginia_Beach_city
+1600000US0643000,"Long Beach city, California",456063, California,Long Beach city,Long_Beach_city
+1600000US1245000,"Miami city, Florida",439906, Florida,Miami city,Miami_city
+1600000US0653000,"Oakland city, California",433797, California,Oakland city,Oakland_city
+1600000US2743000,"Minneapolis city, Minnesota",425338, Minnesota,Minneapolis city,Minneapolis_city
+1600000US4075000,"Tulsa city, Oklahoma",411905, Oklahoma,Tulsa city,Tulsa_city
+1600000US0603526,"Bakersfield city, California",407581, California,Bakersfield city,Bakersfield_city
+1600000US2079000,"Wichita city, Kansas",395707, Kansas,Wichita city,Wichita_city
+1600000US4804000,"Arlington city, Texas",392802, Texas,Arlington city,Arlington_city
+1600000US0804000,"Aurora city, Colorado",389675, Colorado,Aurora city,Aurora_city
+1600000US1271000,"Tampa city, Florida",387037, Florida,Tampa city,Tampa_city
+1600000US2255000,"New Orleans city, Louisiana",376971, Louisiana,New Orleans city,New_Orleans_city
+1600000US3916000,"Cleveland city, Ohio",368006, Ohio,Cleveland city,Cleveland_city
+1600000US0602000,"Anaheim city, California",345935, California,Anaheim city,Anaheim_city
+1600000US3231900,"Henderson city, Nevada",322202, Nevada,Henderson city,Henderson_city
+1600000US0675000,"Stockton city, California",322107, California,Stockton city,Stockton_city
+1600000US2146027,"Lexington-Fayette urban county, Kentucky",321793, Kentucky,Lexington-Fayette urban county,Lexington-Fayette_urban_county
+1600000US4817000,"Corpus Christi city, Texas",317768, Texas,Corpus Christi city,Corpus_Christi_city
+1600000US0662000,"Riverside city, California",317257, California,Riverside city,Riverside_city
+1600000US0669000,"Santa Ana city, California",309468, California,Santa Ana city,Santa_Ana_city
+1600000US1253000,"Orlando city, Florida",309193, Florida,Orlando city,Orlando_city
+1600000US0636770,"Irvine city, California",309014, California,Irvine city,Irvine_city
+1600000US3915000,"Cincinnati city, Ohio",308913, Ohio,Cincinnati city,Cincinnati_city
+1600000US3451000,"Newark city, New Jersey",307216, New Jersey,Newark city,Newark_city
+1600000US2758000,"St. Paul city, Minnesota",307176, Minnesota,St. Paul city,St._Paul_city
+1600000US4261000,"Pittsburgh city, Pennsylvania",300454, Pennsylvania,Pittsburgh city,Pittsburgh_city
+1600000US3728000,"Greensboro city, North Carolina",298250, North Carolina,Greensboro city,Greensboro_city
+1600000US2965000,"St. Louis city, Missouri",293310, Missouri,St. Louis city,St._Louis_city
+1600000US3128000,"Lincoln city, Nebraska",292648, Nebraska,Lincoln city,Lincoln_city
+1600000US4858016,"Plano city, Texas",287037, Texas,Plano city,Plano_city
+1600000US3719000,"Durham city, North Carolina",285439, North Carolina,Durham city,Durham_city
+1600000US3436000,"Jersey City city, New Jersey",283943, New Jersey,Jersey City city,Jersey_City_city
+1600000US0412000,"Chandler city, Arizona",279445, Arizona,Chandler city,Chandler_city
+1600000US0613392,"Chula Vista city, California",277211, California,Chula Vista city,Chula_Vista_city
+1600000US3611000,"Buffalo city, New York",276804, New York,Buffalo city,Buffalo_city
+1600000US3251800,"North Las Vegas city, Nevada",274146, Nevada,North Las Vegas city,North_Las_Vegas_city
+1600000US0427400,"Gilbert town, Arizona",273138, Arizona,Gilbert town,Gilbert_town
+1600000US5548000,"Madison city, Wisconsin",269162, Wisconsin,Madison city,Madison_city
+1600000US3260600,"Reno city, Nevada",268843, Nevada,Reno city,Reno_city
+1600000US3977000,"Toledo city, Ohio",268504, Ohio,Toledo city,Toledo_city
+1600000US1825000,"Fort Wayne city, Indiana",263814, Indiana,Fort Wayne city,Fort_Wayne_city
+1600000US4845000,"Lubbock city, Texas",260990, Texas,Lubbock city,Lubbock_city
+1600000US1263000,"St. Petersburg city, Florida",258214, Florida,St. Petersburg city,St._Petersburg_city
+1600000US4841464,"Laredo city, Texas",258014, Texas,Laredo city,Laredo_city
+1600000US4837000,"Irving city, Texas",254190, Texas,Irving city,Irving_city
+1600000US5116000,"Chesapeake city, Virginia",251269, Virginia,Chesapeake city,Chesapeake_city
+1600000US3775000,"Winston-Salem city, North Carolina",250337, North Carolina,Winston-Salem city,Winston-Salem_city
+1600000US0427820,"Glendale city, Arizona",249627, Arizona,Glendale city,Glendale_city
+1600000US3223770,"Enterprise CDP, Nevada",245286, Nevada,Enterprise CDP,Enterprise_CDP
+1600000US0465000,"Scottsdale city, Arizona",242754, Arizona,Scottsdale city,Scottsdale_city
+1600000US4829000,"Garland city, Texas",241870, Texas,Garland city,Garland_city
+1600000US1608830,"Boise City city, Idaho",237457, Idaho,Boise City city,Boise_City_city
+1600000US5157000,"Norfolk city, Virginia",235089, Virginia,Norfolk city,Norfolk_city
+1600000US5103000,"Arlington CDP, Virginia",232965, Virginia,Arlington CDP,Arlington_CDP
+1600000US5367000,"Spokane city, Washington",229065, Washington,Spokane city,Spokane_city
+1600000US0626000,"Fremont city, California",227523, California,Fremont city,Fremont_city
+1600000US5167000,"Richmond city, Virginia",226604, Virginia,Richmond city,Richmond_city
+1600000US0669088,"Santa Clarita city, California",224588, California,Santa Clarita city,Santa_Clarita_city
+1600000US0665000,"San Bernardino city, California",222194, California,San Bernardino city,San_Bernardino_city
