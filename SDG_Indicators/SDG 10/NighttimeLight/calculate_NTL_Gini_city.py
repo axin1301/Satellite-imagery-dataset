@@ -26,8 +26,6 @@ for year in range(2014,2021):
     gini_list = []
 
     for file1 in pop_file:
-        if file1.split('/')[-1].split('.')[0] in ['Urban Honolulu CDP','Anchorage municipality']:
-            continue
         NTL_data = gdal.Open(NTL_path+ file1.split('/')[-1].split('.')[0]+ '.tif')
         NTL_data = NTL_data.ReadAsArray()
         #NTL_data[NTL_data < 1] = 0
@@ -58,4 +56,4 @@ for year in range(2014,2021):
         file_name_list.append(file1.split('/')[-1].split('.')[0])
 
     pd_file=pd.DataFrame({'city': file_name_list, 'Gini_index':gini_list})
-    pd_file.to_csv('NTL_gini_city2/NTL_gini_'+str(year)+'.csv', index=False)
+    pd_file.to_csv('NTL_gini_city/NTL_gini_'+str(year)+'.csv', index=False)
