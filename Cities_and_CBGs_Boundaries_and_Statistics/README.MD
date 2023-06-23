@@ -7,7 +7,7 @@ extract_shp.py;
 city_join_cbg.py;
 
 ## calculating city/CBG area: 
-process_city_arer.py;
+process_city_area.py;
 
 ## calculating city/CBG centroid: 
 process_city_centroid.py;
