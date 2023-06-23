@@ -20,26 +20,27 @@ This repo is the code for generating the dataset discribed in "A Satellite Image
 │   │   ├── Counting_final_visual_attributes (calculating final visual attributes for each city and CBG)
 │   ├── SDG_Indicators
 │   │   ├── SDG 1 (No poverty)
-│   │   │   ├── ACS data
-│   │   │   │   ├── Population_Above/Below_Poverty
-│   │   │   │   ├── Population_with_a_ratio_of_Income_to_Poverty_Level
+│   │   │   ├── Population_Above/Below_Poverty
+│   │   │   ├── Population_with_a_ratio_of_Income_to_Poverty_Level
+│   │   │   ├── Median Household Income
 │   │   ├── SDG 3 (Good health and well-being)
-│   │   │   ├── ACS data
-│   │   │   │   ├── Population_with_no_Health_Insurance_for_Different_Age_Groups
+│   │   │   ├── Population_with_no_Health_Insurance_for_Different_Age_Groups
 │   │   ├── SDG 4 (Quality education)
-│   │   │   ├── ACS data
-│   │   │   │   ├── Population_with_Different_Education_Status
+│   │   │   ├── Population_with_Different_Education_Status
 │   │   ├── SDG 10 (Reduced inequalities)
-│   │   │   ├── ACS data
-│   │   │   │   ├── Income Gini
-│   │   │   ├── Nighttime_Light_Data, Population_Data
+│   │   │   ├── ACS Income Gini data
+│   │   │   ├── Nighttime_Light_Data
 │   │   │   │   ├── Light Gini
+│   │   │   ├── Population_Data
 │   │   ├── SDG 11 (Sustainable cities and communities)
-│   │   │   ├── OSM data
-│   ├── prescribing (code and results for collection prescribing data)
+│   │   │   ├── extract_OSM_indicators
+│   │   │   ├── process_OSM_indicators
+│   ├── prescribing (collection of prescribing data)
 │   │   ├── OSM_PBF (OSM data from Geofabrik)
 │   │   ├── US_CBG_Geojson (CBG boundary file and ACS data at the CBG level)
 │   │   ├── US_SHAPEFILE_city (US city boundary shapefile)
+│   │   ├── NTL (nighttime light data from EOG)
+│   │   ├── WorldPop_popu (population data from WorldPopulation)
 │   ├── output (directory to store the final output dataset)
 ```
 
