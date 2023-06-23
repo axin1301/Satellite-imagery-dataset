@@ -1,0 +1,110 @@
+GEO_ID,NAME,S0101_C01_001E,S0101_C01_001M,state,city2,city_x,year,img_num,state_code,city_y
+1600000US3651000,"New York city, New York",8467513,*****,New York,New York city,New_York_city,,,36,New York city
+1600000US0644000,"Los Angeles city, California",3849306,68,California,Los Angeles city,Los_Angeles_city,2020.0,81623.0,6,Los Angeles city
+1600000US1714000,"Chicago city, Illinois",2696561,52,Illinois,Chicago city,Chicago_city,2020.0,51926.0,17,Chicago city
+1600000US4835000,"Houston city, Texas",2287047,3111,Texas,Houston city,Houston_city,2020.0,1320.0,48,Houston city
+1600000US0455000,"Phoenix city, Arizona",1624539,144,Arizona,Phoenix city,Phoenix_city,,,4,Phoenix city
+1600000US4260000,"Philadelphia city, Pennsylvania",1576251,*****,Pennsylvania,Philadelphia city,Philadelphia_city,2020.0,2104.0,42,Philadelphia city
+1600000US4865000,"San Antonio city, Texas",1451863,92,Texas,San Antonio city,San_Antonio_city,,,48,San Antonio city
+1600000US0666000,"San Diego city, California",1381600,86,California,San Diego city,San_Diego_city,2020.0,51386.0,6,San Diego city
+1600000US4819000,"Dallas city, Texas",1288441,78,Texas,Dallas city,Dallas_city,2020.0,1358.0,48,Dallas city
+1600000US0668000,"San Jose city, California",983530,135,California,San Jose city,San_Jose_city,2020.0,33779.0,6,San Jose city
+1600000US4805000,"Austin city, Texas",964000,705,Texas,Austin city,Austin_city,2020.0,1931.0,48,Austin city
+1600000US1235000,"Jacksonville city, Florida",954624,35,Florida,Jacksonville city,Jacksonville_city,2020.0,199.0,12,Jacksonville city
+1600000US4827000,"Fort Worth city, Texas",940437,6382,Texas,Fort Worth city,Fort_Worth_city,2020.0,52550.0,48,Fort Worth city
+1600000US3918000,"Columbus city, Ohio",907310,4169,Ohio,Columbus city,Columbus_city,2020.0,4429.0,39,Columbus city
+1600000US1836003,"Indianapolis city (balance), Indiana",882327,5292,Indiana,Indianapolis city (balance),Indianapolis_city_(balance),,,18,Indianapolis city (balance)
+1600000US3712000,"Charlotte city, North Carolina",879697,55,North Carolina,Charlotte city,Charlotte_city,,,37,Charlotte city
+1600000US0667000,"San Francisco city, California",815201,*****,California,San Francisco city,San_Francisco_city,,,6,San Francisco city
+1600000US5363000,"Seattle city, Washington",733904,100,Washington,Seattle city,Seattle_city,,,53,Seattle city
+1600000US0820000,"Denver city, Colorado",711463,*****,Colorado,Denver city,Denver_city,2020.0,29645.0,8,Denver city
+1600000US4055000,"Oklahoma City city, Oklahoma",687691,161,Oklahoma,Oklahoma City city,Oklahoma_City_city,,,40,Oklahoma City city
+1600000US4752006,"Nashville-Davidson metropolitan government (balance), Tennessee",678845,32,Tennessee,Nashville-Davidson metropolitan government (balance),Nashville-Davidson_metropolitan_government_(balance),,,47,Nashville-Davidson metropolitan government (balance)
+1600000US4824000,"El Paso city, Texas",678422,48,Texas,El Paso city,El_Paso_city,,,48,El Paso city
+1600000US1150000,"Washington city, District of Columbia",670050,*****,District of Columbia,Washington city,Washington_city,,,11,Washington city
+1600000US2507000,"Boston city, Massachusetts",654281,3543,Massachusetts,Boston city,Boston_city,2020.0,380.0,25,Boston city
+1600000US3240000,"Las Vegas city, Nevada",646776,82,Nevada,Las Vegas city,Las_Vegas_city,,,32,Las Vegas city
+1600000US4159000,"Portland city, Oregon",642218,1919,Oregon,Portland city,Portland_city,2020.0,696.0,41,Portland city
+1600000US2622000,"Detroit city, Michigan",632589,101,Michigan,Detroit city,Detroit_city,,,26,Detroit city
+1600000US2148006,"Louisville/Jefferson County metro government (balance), Kentucky",628577,85,Kentucky,Louisville,Louisville,,,21,Louisville-Jefferson County metro government (balance)
+1600000US4748000,"Memphis city, Tennessee",628118,52,Tennessee,Memphis city,Memphis_city,2020.0,264.0,47,Memphis city
+1600000US2404000,"Baltimore city, Maryland",576498,*****,Maryland,Baltimore city,Baltimore_city,2020.0,17312.0,24,Baltimore city
+1600000US5553000,"Milwaukee city, Wisconsin",569326,42,Wisconsin,Milwaukee city,Milwaukee_city,2020.0,21036.0,55,Milwaukee city
+1600000US3502000,"Albuquerque city, New Mexico",562591,47,New Mexico,Albuquerque city,Albuquerque_city,,,35,Albuquerque city
+1600000US0627000,"Fresno city, California",544500,80,California,Fresno city,Fresno_city,2020.0,18013.0,6,Fresno city
+1600000US0477000,"Tucson city, Arizona",543215,103,Arizona,Tucson city,Tucson_city,2020.0,38456.0,4,Tucson city
+1600000US0664000,"Sacramento city, California",525028,87,California,Sacramento city,Sacramento_city,,,6,Sacramento city
+1600000US0446000,"Mesa city, Arizona",509492,71,Arizona,Mesa city,Mesa_city,2020.0,18147.0,4,Mesa city
+1600000US2938000,"Kansas City city, Missouri",508415,139,Missouri,Kansas City city,Kansas_City_city,2020.0,55469.0,29,Kansas City city
+1600000US1304000,"Atlanta city, Georgia",496480,81,Georgia,Atlanta city,Atlanta_city,2020.0,19144.0,13,Atlanta city
+1600000US3137000,"Omaha city, Nebraska",487299,34,Nebraska,Omaha city,Omaha_city,,,31,Omaha city
+1600000US0816000,"Colorado Springs city, Colorado",483969,59,Colorado,Colorado Springs city,Colorado_Springs_city,2020.0,31785.0,8,Colorado Springs city
+1600000US3755000,"Raleigh city, North Carolina",469502,1056,North Carolina,Raleigh city,Raleigh_city,,,37,Raleigh city
+1600000US5182000,"Virginia Beach city, Virginia",457672,*****,Virginia,Virginia Beach city,Virginia_Beach_city,,,51,Virginia Beach city
+1600000US0643000,"Long Beach city, California",456063,55,California,Long Beach city,Long_Beach_city,,,6,Long Beach city
+1600000US1245000,"Miami city, Florida",439906,63,Florida,Miami city,Miami_city,2020.0,234.0,12,Miami city
+1600000US0653000,"Oakland city, California",433797,106,California,Oakland city,Oakland_city,2020.0,14493.0,6,Oakland city
+1600000US2743000,"Minneapolis city, Minnesota",425338,40,Minnesota,Minneapolis city,Minneapolis_city,2020.0,13026.0,27,Minneapolis city
+1600000US4075000,"Tulsa city, Oklahoma",411905,1081,Oklahoma,Tulsa city,Tulsa_city,2020.0,32632.0,40,Tulsa city
+1600000US0603526,"Bakersfield city, California",407581,120,California,Bakersfield city,Bakersfield_city,2020.0,22780.0,6,Bakersfield city
+1600000US2079000,"Wichita city, Kansas",395707,51,Kansas,Wichita city,Wichita_city,2020.0,29030.0,20,Wichita city
+1600000US4804000,"Arlington city, Texas",392802,70,Texas,Arlington city,Arlington_city,2020.0,676.0,48,Arlington city
+1600000US0804000,"Aurora city, Colorado",389675,1418,Colorado,Aurora city,Aurora_city,2020.0,213.0,8,Aurora city
+1600000US1271000,"Tampa city, Florida",387037,78,Florida,Tampa city,Tampa_city,2020.0,25870.0,12,Tampa city
+1600000US2255000,"New Orleans city, Louisiana",376971,*****,Louisiana,New Orleans city,New_Orleans_city,,,22,New Orleans city
+1600000US3916000,"Cleveland city, Ohio",368006,64,Ohio,Cleveland city,Cleveland_city,2020.0,1346.0,39,Cleveland city
+1600000US0602000,"Anaheim city, California",345935,61,California,Anaheim city,Anaheim_city,2020.0,8708.0,6,Anaheim city
+1600000US1571550,"Urban Honolulu CDP, Hawaii",345532,85,Hawaii,Urban Honolulu CDP,Urban_Honolulu_CDP,,,15,Urban Honolulu CDP
+1600000US3231900,"Henderson city, Nevada",322202,85,Nevada,Henderson city,Henderson_city,2020.0,288.0,32,Henderson city
+1600000US0675000,"Stockton city, California",322107,62,California,Stockton city,Stockton_city,2020.0,437.0,6,Stockton city
+1600000US2146027,"Lexington-Fayette urban county, Kentucky",321793,*****,Kentucky,Lexington-Fayette urban county,Lexington-Fayette_urban_county,,,21,Lexington-Fayette urban county
+1600000US4817000,"Corpus Christi city, Texas",317768,25,Texas,Corpus Christi city,Corpus_Christi_city,,,48,Corpus Christi city
+1600000US0662000,"Riverside city, California",317257,58,California,Riverside city,Riverside_city,2020.0,13604.0,6,Riverside city
+1600000US0669000,"Santa Ana city, California",309468,85,California,Santa Ana city,Santa_Ana_city,2020.0,4629.0,6,Santa Ana city
+1600000US1253000,"Orlando city, Florida",309193,135,Florida,Orlando city,Orlando_city,2020.0,17836.0,12,Orlando city
+1600000US0636770,"Irvine city, California",309014,55,California,Irvine city,Irvine_city,2020.0,10975.0,6,Irvine city
+1600000US3915000,"Cincinnati city, Ohio",308913,82,Ohio,Cincinnati city,Cincinnati_city,2020.0,382.0,39,Cincinnati city
+1600000US3451000,"Newark city, New Jersey",307216,34,New Jersey,Newark city,Newark_city,2020.0,1753.0,34,Newark city
+1600000US2758000,"St. Paul city, Minnesota",307176,66,Minnesota,St. Paul city,St._Paul_city,,,27,St Paul city
+1600000US4261000,"Pittsburgh city, Pennsylvania",300454,93,Pennsylvania,Pittsburgh city,Pittsburgh_city,2020.0,11817.0,42,Pittsburgh city
+1600000US3728000,"Greensboro city, North Carolina",298250,58,North Carolina,Greensboro city,Greensboro_city,2020.0,1459.0,37,Greensboro city
+1600000US2965000,"St. Louis city, Missouri",293310,*****,Missouri,St. Louis city,St._Louis_city,,,29,St Louis city
+1600000US3128000,"Lincoln city, Nebraska",292648,36,Nebraska,Lincoln city,Lincoln_city,2020.0,579.0,31,Lincoln city
+1600000US0203000,"Anchorage municipality, Alaska",288121,*****,Alaska,Anchorage municipality,Anchorage_municipality,,,2,Anchorage municipality
+1600000US4858016,"Plano city, Texas",287037,1039,Texas,Plano city,Plano_city,2020.0,11756.0,48,Plano city
+1600000US3719000,"Durham city, North Carolina",285439,364,North Carolina,Durham city,Durham_city,2020.0,49.0,37,Durham city
+1600000US3436000,"Jersey City city, New Jersey",283943,58,New Jersey,Jersey City city,Jersey_City_city,,,34,Jersey City city
+1600000US0412000,"Chandler city, Arizona",279445,66,Arizona,Chandler city,Chandler_city,2020.0,9165.0,4,Chandler city
+1600000US0613392,"Chula Vista city, California",277211,64,California,Chula Vista city,Chula_Vista_city,2020.0,8580.0,6,Chula Vista city
+1600000US3611000,"Buffalo city, New York",276804,39,New York,Buffalo city,Buffalo_city,2020.0,2334.0,36,Buffalo city
+1600000US3251800,"North Las Vegas city, Nevada",274146,49,Nevada,North Las Vegas city,North_Las_Vegas_city,,,32,North Las Vegas city
+1600000US0427400,"Gilbert town, Arizona",273138,51,Arizona,Gilbert town,Gilbert_town,,,4,Gilbert town
+1600000US5548000,"Madison city, Wisconsin",269162,116,Wisconsin,Madison city,Madison_city,2020.0,4359.0,55,Madison city
+1600000US3260600,"Reno city, Nevada",268843,46,Nevada,Reno city,Reno_city,2020.0,28384.0,32,Reno city
+1600000US3977000,"Toledo city, Ohio",268504,38,Ohio,Toledo city,Toledo_city,2020.0,136.0,39,Toledo city
+1600000US1825000,"Fort Wayne city, Indiana",263814,5007,Indiana,Fort Wayne city,Fort_Wayne_city,,,18,Fort Wayne city
+1600000US4845000,"Lubbock city, Texas",260990,28,Texas,Lubbock city,Lubbock_city,2020.0,16638.0,48,Lubbock city
+1600000US1263000,"St. Petersburg city, Florida",258214,55,Florida,St. Petersburg city,St._Petersburg_city,,,12,St Petersburg city
+1600000US4841464,"Laredo city, Texas",258014,2480,Texas,Laredo city,Laredo_city,2020.0,16052.0,48,Laredo city
+1600000US4837000,"Irving city, Texas",254190,53,Texas,Irving city,Irving_city,2020.0,11046.0,48,Irving city
+1600000US5116000,"Chesapeake city, Virginia",251269,*****,Virginia,Chesapeake city,Chesapeake_city,,,51,Chesapeake city
+1600000US3775000,"Winston-Salem city, North Carolina",250337,64,North Carolina,Winston-Salem city,Winston-Salem_city,2020.0,18746.0,37,Winston-Salem city
+1600000US0427820,"Glendale city, Arizona",249627,56,Arizona,Glendale city,Glendale_city,2020.0,11096.0,4,Glendale city
+1600000US3223770,"Enterprise CDP, Nevada",245286,13508,Nevada,Enterprise CDP,Enterprise_CDP,,,32,Enterprise CDP
+1600000US0465000,"Scottsdale city, Arizona",242754,38,Arizona,Scottsdale city,Scottsdale_city,,,4,Scottsdale city
+1600000US4829000,"Garland city, Texas",241870,48,Texas,Garland city,Garland_city,2020.0,450.0,48,Garland city
+1600000US1608830,"Boise City city, Idaho",237457,47,Idaho,Boise City city,Boise_City_city,2020.0,308.0,16,Boise City city
+1600000US5157000,"Norfolk city, Virginia",235089,*****,Virginia,Norfolk city,Norfolk_city,,,51,Norfolk city
+1600000US5103000,"Arlington CDP, Virginia",232965,*****,Virginia,Arlington CDP,Arlington_CDP,,,51,Arlington CDP
+1600000US5367000,"Spokane city, Washington",229065,39,Washington,Spokane city,Spokane_city,2020.0,17645.0,53,Spokane city
+1600000US0626000,"Fremont city, California",227523,52,California,Fremont city,Fremont_city,2020.0,1152.0,6,Fremont city
+1600000US5167000,"Richmond city, Virginia",226604,*****,Virginia,Richmond city,Richmond_city,2020.0,766.0,51,Richmond city
+1600000US0669088,"Santa Clarita city, California",224588,51,California,Santa Clarita city,Santa_Clarita_city,2020.0,12468.0,6,Santa Clarita city
+1600000US0665000,"San Bernardino city, California",222194,49,California,San Bernardino city,San_Bernardino_city,2020.0,8925.0,6,San Bernardino city
+1600000US2205000,"Baton Rouge city, Louisiana",222177,42,Louisiana,Baton Rouge city,Baton_Rouge_city,2020.0,12451.0,22,
+1600000US1230000,"Hialeah city, Florida",220479,44,Florida,Hialeah city,Hialeah_city,2020.0,3379.0,12,
+1600000US5370000,"Tacoma city, Washington",219203,44,Washington,Tacoma city,Tacoma_city,,,53,
+1600000US0648354,"Modesto city, California",218782,57,California,Modesto city,Modesto_city,,,6,
+1600000US1258715,"Port St. Lucie city, Florida",217535,43,Florida,Port St. Lucie city,Port_St._Lucie_city,,,12,
+1600000US0137000,"Huntsville city, Alabama",215482,1705,Alabama,Huntsville city,Huntsville_city,,,1,
+1600000US3268585,"Spring Valley CDP, Nevada",213552,12342,Nevada,Spring Valley CDP,Spring_Valley_CDP,,,32,
