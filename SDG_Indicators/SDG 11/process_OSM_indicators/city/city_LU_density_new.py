@@ -9,7 +9,7 @@ import geopandas as gpd
 
 #typ = 'driving'
 area_lut = pd.read_csv('Area_Lut_cbg.csv')
-all_city_list = list(pd.read_csv('../../process_post_osm/Area_Lut_city.csv')['NAME_process'])
+all_city_list = list(pd.read_csv('../../Cities_and_CBGs_Boundaries_and_Statistics/Area_Lut_city.csv')['NAME_process'])
 #landuse_labels = ['grass', 'commercial', 'recreation_ground', 'churchyard', 'industrial', 'pond', 'reservoir', 'construction', 'basin', 'residential', 'railway', 'farmland', 'cemetery', 'quarry', 'retail', 'forest']
 landuse_labels = ['commercial', 'industrial', 'construction', 'residential']
 LABEL_NAMES = np.asarray(landuse_labels)
@@ -24,13 +24,11 @@ for typ in ['LU']:
     city_name_list_all = []
     segmentation_df = pd.DataFrame()
     for year in range(14,21):
-        for c in all_city_list[20:]:
-            if c == 'Anchorage municipality' or c == 'Urban Honolulu CDP':
-                continue
+        for c in all_city_list:
             print(year, all_city_list.index(c))
             df = pd.read_csv(typ+'/'+c+'_cbg_'+typ+'_'+str(year)+'.csv')
             #print(df.columns)
-            shapefile = gpd.read_file('../../out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
+            shapefile = gpd.read_file('../../extract_OSM_indicators/city/out_geojson_'+typ+'/'+c+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
             #print(shapefile1.columns)
             cbg_list = list(set(list(df['CensusBlockGroup'])))
             for cbg in cbg_list:
