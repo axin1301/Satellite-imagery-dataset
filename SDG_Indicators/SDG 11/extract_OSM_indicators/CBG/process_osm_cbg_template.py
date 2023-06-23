@@ -35,7 +35,7 @@ def subtask(order,Npara,Nlp,multi_shp_year,typ):
         if os.path.exists(typ+str(20)+str(year)+'/'+city_name+'_cbg_'+typ+'_'+str(year)+'.csv'):
             continue
 
-        #if not os.path.exists('../out_geojson'+str(20)+str(year)+'/out_geojson_'+typ+'/'+city_name+'_'+typ+'_'+str(year)+'.geojson'):
+        #if not os.path.exists('.out_geojson'+str(20)+str(year)+'/out_geojson_'+typ+'/'+city_name+'_'+typ+'_'+str(year)+'.geojson'):
         #    continue
 
         shapefile = gpd.read_file(shp_name, driver = 'geojson') # cbg in shp
@@ -44,7 +44,7 @@ def subtask(order,Npara,Nlp,multi_shp_year,typ):
         #print(shapefile.columns)
         city_name = shp_name.split('/')[-1].split('.')[0].split('_')[0]
         #print(city_name)
-        attribute_shp = gpd.read_file('../out_geojson'+str(20)+str(year)+'/out_geojson_'+typ+'/'+city_name+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
+        attribute_shp = gpd.read_file('../city/out_geojson'+str(20)+str(year)+'/out_geojson_'+typ+'/'+city_name+'_'+typ+'_'+str(year)+'.geojson', driver = 'geojson')
 
         attr_within_cbg = gpd.sjoin(attribute_shp, shapefile,how = 'inner', op = 'intersects')
         attr_within_cbg.to_csv(typ+str(20)+str(year)+'/'+city_name+'_cbg_'+typ+'_'+str(year)+'.csv', index=False)
@@ -62,8 +62,8 @@ if __name__ == '__main__':
     if not os.path.exists(typ):
         os.mkdir(typ)
     #shp_list = glob.glob('shape_scd/*.shp')
-    #shp_list = glob.glob('../../../ACS/cbg_in_city_new_2/*.geojson')
-    shp_list = glob.glob('../cbg_in_city_new_2_2020/*.geojson')
+    #shp_list = glob.glob('../../Cities_and_CBGs_Boundaries_and_Statistics/cbg_in_city_new/*.geojson') # 2014 to 2019
+    shp_list = glob.glob('../../Cities_and_CBGs_Boundaries_and_Statistics/cbg_in_city_new_2020/*.geojson') #2020 to 2023
 
     multi_shp_year = []
     for shp_name in shp_list: 
