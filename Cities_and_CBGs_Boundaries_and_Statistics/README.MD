@@ -1,4 +1,6 @@
-This folder mainly contains the codes for extracting city boundary shapefiles: extract_shp.py;
+This folder mainly contains the codes for 
+
+extracting city boundary shapefiles: extract_shp.py;
 
 determining CBGs in each city: city_join_cbg.py;
 
