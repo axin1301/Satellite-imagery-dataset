@@ -39,9 +39,6 @@ for j in range(len(cbg_in_city_list)):
         #input_raster = '../../../prescribing/popu_worldpop/pop_USA_mainland_'+str(year)+'.tif'
     #input_raster=gdal.Open(input_raster)
         with rio.open(input_raster) as src:
-
-    #folderPolyAimMap = 'NTL_GINI/NTL_clip/'+str(year)+'/'
-    #folderPolyAimMap = 'NTL_GINI/pop_clip_old/'+str(year)+'/'
             folderPolyAimMap = 'cropped_NTL_cbg/'+str(year)+'/'+city_name+'/'
             #folderPolyAimMap = 'cropped_popu_cbg/'+str(year)+'/'+city_name+'/'
             if not os.path.exists(folderPolyAimMap):
